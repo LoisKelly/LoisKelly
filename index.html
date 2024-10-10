@@ -4,19 +4,19 @@
 <head>
   <title>Lois Kelly's Personal Webpage</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
+
   <!-- External Stylesheets -->
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  
+
   <!-- jQuery and Menu Script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
-  
+
   <!-- Custom Styles -->
   <style>
     /* Base Styles */
@@ -30,7 +30,7 @@
 
     /* Banner Styling */
     .banner {
-      background-color: #00796b; /* Teal color */
+      background-color: #00796b;
       padding: 20px;
       text-align: center;
       color: #ffffff;
@@ -48,47 +48,34 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    /* Headings */
-    h2 {
-      color: #00796b;
+    /* Flex Container for Links */
+    .link-section {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .link-section a {
       font-weight: 700;
-      margin-top: 20px;
-    }
-
-    h3 {
-      color: #555555;
-      font-weight: 700;
-      margin-top: 15px;
-    }
-
-    /* Paragraphs */
-    p.text {
-      line-height: 1.6;
-      margin: 10px 0;
-    }
-
-    /* Links */
-    a {
       color: #00796b;
       text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    a:hover {
-      text-decoration: underline;
-      color: #004d40;
+    .link-section a:hover {
+      background-color: #00796b;
+      color: #ffffff;
     }
 
-    /* Lists */
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 5px 0;
-    }
-
-    /* Flex Layout */
+    /* Content Flexbox */
     .flex-row {
       display: flex;
       flex-wrap: wrap;
@@ -119,72 +106,30 @@
       margin: 15px 0;
     }
 
-    /* Goodreads Widget */
-    .gr_custom_container_1714486808 {
-      border: 1px solid #cccccc;
-      border-radius: 8px;
-      padding: 10px;
-      background-color: #ffffff;
-      color: #333333;
-    }
-
-    .gr_custom_header_1714486808 {
-      border-bottom: 1px solid #cccccc;
-      width: 100%;
-      margin-bottom: 10px;
-      text-align: center;
-      font-size: 1.5em;
-    }
-
-    .gr_custom_each_container_1714486808 {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #eeeeee;
-      padding-bottom: 10px;
-    }
-
-    .gr_custom_book_container_1714486808 img {
-      height: 60px;
-      width: 40px;
-      object-fit: cover;
-      border: 1px solid #cccccc;
-      border-radius: 4px;
-      margin-right: 10px;
-    }
-
-    .gr_custom_title_1714486808 a {
-      font-weight: 700;
+    /* Headings */
+    h2, h3 {
       color: #00796b;
+      font-weight: 700;
+      margin-top: 20px;
     }
 
-    .gr_custom_author_1714486808 {
-      font-size: 0.9em;
-      color: #555555;
+    p.text {
+      line-height: 1.6;
+      margin: 10px 0;
     }
 
     /* Responsive Design */
     @media (max-width: 600px) {
-      .flex-row {
+      .link-section {
         flex-direction: column;
         align-items: center;
       }
 
-      .flex-item {
+      .link-section a {
         margin: 10px 0;
       }
     }
   </style>
-  
-  <!-- Google Analytics (Optional) -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-103598896-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 </head>
 
 <body>
@@ -193,8 +138,16 @@
   </div>
 
   <div class="menu-container"></div>
-  
+
   <div class="content-container">
+    <!-- Improved Link Section -->
+    <div class="link-section">
+      <a href="https://loiskelly.com">Personal Homepage</a>
+      <a href="Lois_Kelly_CV.pdf" target="_blank">CV</a>
+      <a href="https://homecountiesband.com">Home Counties Band</a>
+      <a href="https://github.com/LoisKelly">GitHub</a>
+    </div>
+
     <div class="content">
       <div class="flex-row">
         <div class="flex-item">
